@@ -1,0 +1,64 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    text-align: center;
+}
+
+
+/*Clear floats after the columns*/
+
+.row::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+
+/*Diseño de columnas*/
+
+.column-1 {
+    width: 100%;
+    float: left;
+    /* background-color: blue; */
+    background-color: red;
+}
+
+.column-2 {
+    width: 50%;
+    float: left;
+    /* background-color: royalblue; */
+    background-color: orangered;
+}
+
+.column-3 {
+    width: 33.33%;
+    float: left;
+    /* background-color: dodgerblue; */
+    background-color: coral;
+}
+
+.column-4 {
+    width: 25%;
+    float: left;
+    /* background-color: skyblue; */
+    background-color: orange;
+}
+
+.column-5 {
+    width: 20%;
+    float: left;
+    /* background-color: lightblue; */
+    background-color: yellow;
+}
+
+@media only screen and (max-width: 600px) {
+    .column-3 {
+        width: 100%;
+    }
+    .column-4 {
+        width: 50%;
+    }
+}
